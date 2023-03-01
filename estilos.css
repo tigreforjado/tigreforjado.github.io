@@ -1,0 +1,48 @@
+body{ 
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#columna1 {
+    position:absolute;
+    top:0px;
+    left: 10px;
+    width:200px;
+    margin-top:10px;
+    }
+    #columna2 {
+    margin-left: 10px;
+    margin-right:20px;
+    margin-top:10px;
+    }
+
+
+#contenedor{
+    width: 800px;
+    margin: 0px auto;
+
+}
+
+header{ 
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+
+
+}
+
+nav ul li{
+
+    float: left;
+    list-style-type: none;
+    margin: 10px;
+
+
+
+
+
+}
+
+

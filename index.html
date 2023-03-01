@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="utf-8" />
+        <title> Mi curriculum Vitae</title>
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://kit.fontawesome.com/d86ffa0123.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="columna1">
+            
+            <img src="cv.jpg" alt="Foto de mi curriculum"
+                       width="300"
+                        height="341"
+            >
+    
+                                
+                            <p> Datos Personales<br>
+                                Nombre: Erika<br>
+                                Apellido: Beck<br>
+                                Fecha de nacimiento: 5 de febrero de 1980<br>
+                                Lugar de Nacimiento: San Salvador, Jujuy<br>
+                                Nacionalidad: Argentina<br>
+                                D.N.I.: 28546878<br>
+                                Estado civil: soltera<br>
+                                Direccion: Psje Norte 87<br>
+                                Telefono: 3875777777<br>
+                                email: erikabeck@msn.com<br>
+                                
+                            </p>
+
+
+                        </div>                   
+
+
+
+
+
+        <div id="columna2">
+
+
+        
+            <div id="contenedor"> 
+                <header>
+                    <h1>Mi Curriculum Vitae</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" >
+                                Datos Personales
+                            </a>
+                                                
+                        </li>
+
+                        <li>
+                            <a href="index.html" >
+                                Estudios Realizados
+                            </a>
+                                                
+                        </li>
+
+                        <li>
+                            <a href="index.html" >
+                                Cursos y Jornadas Realizadas
+                            </a>
+                                               
+                        </li>
+
+                        <li>
+                            <a href="index.html" >
+                                Experiencia Laboral
+                            </a>
+                                                
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+        
+
+                <section id="contenido">
+                    
+                    </article>
+
+                    <article class="Articulo">
+                        <h2> Estudios Realizados</h2>
+                        <p> Estudios primarios: Colegio María Auxiliadora<br>
+                            Estudios secundarios: Escuela y liceo vocacional Sarmiento<br>
+                            Estudios Universitarios: Carrera de Medicina en la facultad nacional de Salta<br>
+                        
+                        </p>
+                    </article>
+
+                    <article class="Articulo">
+                        <h2> Cursos y Jornadas Realizadas</h2>
+                        <p> Curso: Estrategias de Aprendizaje en la Universidad. Dictado por el Gabinete de Educación Médica de la Facultad de Medicina U.N.S. Duración 100 hs.<br>
+                            1º Jornadas de Relación Médico Paciente. Aspectos Antropológicos y Éticos. Organizado por Cátedra de Antropología Médica de la Facultad de Medicina. Duración 25 hs.<br>
+                            Curso de Aprendizaje Clínico Temprano. Dictado y organizado por Cátedra de Semiología en Hospital Padilla. Facultad de Medicina Duración 100 hs.<br>
+                            Curso de Formación Docente. Dictado por Gabinete Psicopedagógico de la Facultad de Medicina. Duración 80 hs.<br>
+                            Unidad de Formación de Recursos Humanos en Docencia. Dictado por Cátedra de Antropología Médica.<br>
+                            “Informe Anatomopatógico: Alcances e Implicancias”. Dictado por cátedra de Anatomía Patológica.<br>
+                        
+                        </p>
+                    </article>
+
+                    <article class="Articulo">
+                        <h2> Experiencia Laboral</h2>
+                        <p> Pasantía Laboral: Curso de Relaciones Públicas: Módulo Atención al Cliente. Otorgado por La Empresa R. RENDACE y L. CORONEL. Duración 12 meses.<br>
+                            Manejo de software basado en Sistema operativo Windows, que incluye paquete de Microsoft Office. Manejo de software basado en sistema operativo Linux Ubuntu.<br>
+                            Manejo del idioma inglés técnico.<br>
+                            Agente en atención al cliente de la empresa Teleperformance.<br>
+                        
+                        </p>
+                    </article>
+
+
+                </section>
+        
+        
+        
+            </div>
+    
+            
+
+
+
+
+            <form>
+                <button onclick="myFunction()">Clickeame</button>
+
+                <script>
+                function myFunction() {
+                  alert("Muchas gracias por ver mi CV. Saludos!");
+                }
+                </script>
+
+
+            </form>
+
+
+
+            </section>
+
+    
+    <p align="center" id="clock"></p>
+            
+    <script>
+        function show() {
+            var Digital = new Date()
+            var hours = Digital.getHours()
+            var minutes = Digital.getMinutes()
+            var seconds = Digital.getSeconds()
+            var dn = "AM"
+            if (hours > 12) {
+                    dn = "PM"
+                    hours = hours - 12
+                }
+            if (hours == 0)
+                    hours = 12
+            if (minutes <= 9)
+                    minutes = "0" + minutes
+            if (seconds <= 9)
+                    seconds = "0" + seconds
+                document.getElementById('clock').innerText = hours + ":" + minutes + ":" +
+                    seconds + " " + dn
+                setTimeout("show()", 1000)
+            }
+            show();
+    </script>    
+    
+            
+    </body>
+</html>
